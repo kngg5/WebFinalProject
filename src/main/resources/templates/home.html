@@ -34,11 +34,24 @@
             width: 100%;
             text-align: center;
         }
+        .header-logo {
+          background-image: url(https://st-1.akipress.org/st_all/bilim/9/1519540999.2.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 50px;
+          width: 50px;
+          
+        }
+        .space {
+          padding-right: 20px;
+        }
     </style>
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#" th:text="${title}"></a>
+          <a th:href="@{home}"><div class="header-logo"></div></a>
+          <div class="space"></div>
+          <a class="navbar-brand" th:href="@{home}" th:text="${title}"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -61,6 +74,17 @@
       
       
       <h1 style="padding-top: 80px">This is home page.</h1>
+
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">Centered</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+          </div>
+        </div>
+      </div>
       
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
