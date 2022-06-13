@@ -9,6 +9,7 @@
 </head>
 <body>
     <style>
+     
         .carousel-item {
             height: 65vh;
             min-height: 350px;
@@ -27,12 +28,14 @@
 
             background-color: black;
         }
-        footer{
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color:white;
+          color: black;
+          text-align: center;
         }
         .header-logo {
           background-image: url(https://st-1.akipress.org/st_all/bilim/9/1519540999.2.jpg);
@@ -45,6 +48,12 @@
         .space {
           padding-right: 20px;
         }
+        .container-n {  
+          display: grid;  
+          grid-gap: 5px;  
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          grid-template-rows: repeat(2, 100px);  
+      }
     </style>
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -73,33 +82,44 @@
     </header>  
       
       
-      <h1 style="padding-top: 80px">This is home page.</h1>
+     
 
       <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold">Centered</h1>
+        <h1 class="display-5 fw-bold">Delivery App</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-          </div>
+          <p class="lead mb-4">This a simpe app for delivery. There is nothing complicated. This application allows you to order supplies such as notepad, pens, pencils, ink pens, bags and eraser. Some of them are:</p>
+
         </div>
       </div>
       
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
-        </div>
+      <div class="album py-5 bg-light">
+        <div class="container">
     
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-        </ul>
-      </footer>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://pyxis.nymag.com/v1/imgs/c97/c45/7171963124d26e5005fe7adb834dd949e1-men-s-messenger-bag-lede.2x.rsocial.w600.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>   
+               
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://cdn.windowsreport.com/wp-content/uploads/2019/07/notepad-modern-design-concept.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+    
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://schneiderpen.com/static/product/4004675080080_1@L3ImqT9gBv10pzygXl10nUIgLz5unJjeZwVjrQVlZPfgM3Wuqzy0rFgwMJ50MKVeYJI4qTIhqPflZwO4ZwVj.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>© 2022 Copyright reserved</p>
+      </div>
 </body>
 
 </html>

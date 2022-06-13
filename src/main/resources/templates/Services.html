@@ -28,11 +28,13 @@
             background-color: black;
         }
         footer{
-            position: fixed;
+            
             left: 0;
             bottom: 0;
             width: 100%;
             text-align: center;
+
+            
         }
         .header-logo {
           background-image: url(https://asclepion.com/wp-content/uploads/2014/10/Asclepion-Laser-Technologies-Services-and-Support.jpg);
@@ -72,25 +74,76 @@
       </nav>
     </header>  
       
-      <h1 style="padding-top: 80px">This is services.</h1>
+      <h1 style="padding-top: 80px">Choose the product by product number</h1>
       
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold">Centered</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+      
+      <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://pyxis.nymag.com/v1/imgs/c97/c45/7171963124d26e5005fe7adb834dd949e1-men-s-messenger-bag-lede.2x.rsocial.w600.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Bag<br>Product number: 1</text>   
+               
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://cdn.windowsreport.com/wp-content/uploads/2019/07/notepad-modern-design-concept.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Cool Notepad<br>Product number: 2</text>
+    
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://schneiderpen.com/static/product/4004675080080_1@L3ImqT9gBv10pzygXl10nUIgLz5unJjeZwVjrQVlZPfgM3Wuqzy0rFgwMJ50MKVeYJI4qTIhqPflZwO4ZwVj.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Pen<br>Product number: 3</text>
+    
+                
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.homestratosphere.com/wp-content/uploads/2020/08/f-pencil-aug252020-min-e1598342981235.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Pencil<br>Product number: 4</text>    
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://thumbs.dreamstime.com/b/ink-pen-clipping-path-3081078.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Ink Pen<br>Product number: 5</text>    
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="text-align: center;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://thumbs.dreamstime.com/b/green-eraser-isolated-white-background-clipping-path-155514225.jpg" role="img"/><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Eraser<br>Product number: 6</text>    
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       
+
+    <div class="container mt-5 mb-5">
+      <h1>Make an Order</h1>
+      <form th:action="@{Services}" method="post">
+        <input type="text" name="customer_name" placeholder="Your name" class="form-control"><br>
+        <input type="text" name="customer_surname" placeholder="Your surname" class="form-control"><br>
+        <input type="number" name="customer_phone" placeholder="Your phone number" class="form-control"><br>
+        <input type="number" name="order_numbers" placeholder="Enter product number without space between numbers" class="form-control"><br>
+        <textarea name="address" placeholder="Delivery address" class="form-control"></textarea><br>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
             <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
           </a>
-          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+          <span class="mb-3 mb-md-0 text-muted">© 2022 Copyright reserved</span>
         </div>
     
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
