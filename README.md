@@ -1,7 +1,7 @@
 # WebFinalProject
 
 This is an order making app, it takes the personal data and product numbers. In app there is no money paying system yet. 
-App  uses Postgresql database that is on heroku. unfortunately, there was some problem with deploying this app to heroku. But heroku postgre database is working.
+App  uses Postgresql database that is on heroku. Unfortunately, there was some problem with deploying this app to heroku. But heroku postgre database is working.
 
 
 There is some screenshots of app:
